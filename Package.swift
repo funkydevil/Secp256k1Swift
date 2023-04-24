@@ -29,7 +29,7 @@ let package = Package(
 //             dependencies: []),
         .target(
             name: "Secp256k1Swift",
-            dependencies: ["CSecp256k1"]),
+            dependencies: []),
         .target(
             name: "BIP32Swift",
             dependencies: ["Secp256k1Swift", "BigInt", "CryptoSwift", "Base58Swift", "RIPEMDSwift"]),
