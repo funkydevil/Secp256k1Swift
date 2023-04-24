@@ -20,7 +20,7 @@ let package = Package(
         .package(url: "https://github.com/attaswift/BigInt.git", from: "5.0.0"),
         .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", from: "1.4.1"),
         .package(url: "https://github.com/mathwallet/Base58Swift.git", from: "0.0.1"),
-        .package(url: "https://github.com/mathwallet/RIPEMDSwift.git", from: "0.0.1")
+        .package(url: "https://github.com/mathwallet/RIPEMDSwift.git", from: "0.0.1"),
         .package(url: "https://github.com/6od9i/web3swift", .branch("develop"))
     ],
     targets: [
