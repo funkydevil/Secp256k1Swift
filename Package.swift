@@ -9,9 +9,9 @@ let package = Package(
 //         .library(
 //             name: "CSecp256k1",
 //             targets: ["CSecp256k1"]),
-//         .library(
-//             name: "Secp256k1Swift",
-//             targets: ["Secp256k1Swift"]),
+        .library(
+            name: "Secp256k1Swift",
+            targets: ["Secp256k1Swift"]),
         .library(
             name: "BIP32Swift",
             targets: ["BIP32Swift"]),
@@ -21,14 +21,15 @@ let package = Package(
         .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", from: "1.4.1"),
         .package(url: "https://github.com/mathwallet/Base58Swift.git", from: "0.0.1"),
         .package(url: "https://github.com/mathwallet/RIPEMDSwift.git", from: "0.0.1")
+        .package(url: "https://github.com/6od9i/web3swift", .branch("develop"))
     ],
     targets: [
 //         .target(
 //             name: "CSecp256k1",
 //             dependencies: []),
-//         .target(
-//             name: "Secp256k1Swift",
-//             dependencies: ["CSecp256k1"]),
+        .target(
+            name: "Secp256k1Swift",
+            dependencies: ["CSecp256k1"]),
         .target(
             name: "BIP32Swift",
             dependencies: ["Secp256k1Swift", "BigInt", "CryptoSwift", "Base58Swift", "RIPEMDSwift"]),
